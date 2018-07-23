@@ -112,6 +112,17 @@ int main() {
                 cout << endl;
                 break;
             }
+            case 4: {
+                int i;
+                cin.ignore();
+                cout << "Delete nember: ";   
+                cin >> i;
+                deleteNode(root, i);
+                cout << "\e[1;37m";
+                NLR(root);
+                wait();
+                cout << endl;
+            }
         }
     }
     return 0;
